@@ -1,0 +1,249 @@
+body {
+		margin:0;
+		padding:0;
+		font: 14pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+		background: #2a2c29; /* Цвет фона */
+		color:#c9cac8;
+    }
+    h2 {
+		font-size: 1.1em; /* Размер шрифта */
+		color: #800040; /* Цвет текста */
+		margin-top: 0; /* Отступ сверху */
+    }
+    #container {
+		width: 100%; /* Ширина слоя */
+		margin: 0; /* Выравнивание по центру */
+		position:relative;
+	}
+	
+	/* -----HEADER----- */
+    #header {
+		font-size: 45pt; /* Размер текста */
+		margin: 0px;
+		width:100%;
+		height:120px;
+		padding: 0px; /* Отступы вокруг текста */
+		background: url(header_bkgrnd.jpg); /* Цвет фона шапки */
+		border-bottom: 5px solid #9b4115;
+		position:relative;
+    }
+	
+	#header-content {
+		width:1200px;
+		height:120px;
+		margin:0 auto;
+		padding:0px;
+	}
+	
+	#header-left {
+		float:left;
+		height:120px;
+	}
+	
+	#header-right {
+		float:right;
+		height:120px;
+	}
+	#header-languages {
+		float:right;
+		height:30px;
+	}
+	#header-languages img{
+		display:inline;
+	}
+	#header-languages ul{
+		margin:0px;
+		list-style: none;
+	}
+	#header-languages ul li{
+		display:inline;
+		margin:0px;
+	}
+	
+	#social {
+		float:right;
+	}
+	
+	#site_title {
+	padding: 0px;
+	margin: 0px;
+	font-size: 100% 45px;
+	font-weight:bold;
+	
+	float:left;
+	margin-top:55px;
+	}
+	/* -----END HEADER----- */
+      
+
+/* ---------- CONTENT ------------- */
+
+	#content {
+		width:1100px;
+		height:800px;
+		margin:0 auto;
+		padding:10px 20px 10px 80px;
+	}
+
+	 /* ------------- Menu ------------------ */
+#menu {
+	
+	margin: 0px;
+	padding: 5px;
+	width: 1090px;
+	height:25px;
+	
+	margin-bottom:10px;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	
+	
+}
+
+#menu ul li {
+	display: inline;	
+}
+
+#menu ul li a {
+	padding: 0px 0px;
+	margin: 0px 0px 0px 20px;
+	font: 14px arial;
+	font-weight: bold;
+	color:#9b4115;
+	text-decoration: none;
+}
+
+/*#menu ul li a:hover, #menu ul li .current {
+	border-bottom: 1px dashed #e1f03f;
+}*/
+
+/* ---------- End of Menu ------------- */
+	
+	#content-left-column {
+		padding:0px;
+		margin:0px;
+		float:left;
+		width:790px;
+		
+		margin-bottom:20px;
+	}
+	
+	#logo {
+		margin:0;
+		padding:0;
+		width:790px;
+		background: url(logo.jpg) no-repeat;
+	}
+	
+	.news {
+		width:790px;
+		padding:10px 0px;
+		height:131px;
+		border-bottom: 5px solid #151615;
+		
+	}
+	
+	.news-left {
+		height:131px;
+		width:387px;
+		float:left;
+	}
+	
+	.news-right {
+		float:right;
+		height:131px;
+		width:395px;
+	}
+	
+	.news-right-title {
+		height:23px;
+		width:385px;
+		
+		padding:5px;
+		background: #151615;
+	}
+	
+	.news-right-text {
+		font-size:10pt;
+		
+	}
+	
+	#content-right-column {
+		padding:0px;
+		margin:0px;
+		float:right;
+		width:272px;
+		height:740px;
+		
+		font:12pt;
+		
+	}
+	
+	#calendar-title {
+		padding:5px;
+		height:24px;
+		width:262px;
+		background: #151615;
+		margin-bottom:3px;
+	}
+	
+	#calendar{
+		width:272px;
+		height:200px;
+		background: #151615;
+		margin-bottom:3px;
+	}
+	
+	#registration{
+		height:25px;
+		padding:6px;
+		text-align:center;
+		background: #151615;
+		margin-bottom:15px;
+	}
+	
+	#popular-title {
+		padding:5px;
+		height:24px;
+		background: #151615;
+		margin-bottom:3px;
+	}
+	
+	#popular {
+		padding:10px;
+		height:392px;
+		background: #151615;
+		
+	}
+	
+	#news-archive {
+		width:100%;
+		background: #151615;
+		float:left;
+	}
+	
+	#news-archive-title {
+		border-top: 4px solid #9b4115;
+		padding:5px;
+		height:37px;
+	}
+
+	
+
+
+
+/* ---------- END OF CONTENT ------------- */
+
+
+	
+   
+   #footer {
+    background: #8fa09b; /* Цвет фона подвала */
+   
+    padding: 5px; /* Отступы вокруг текста */
+    clear: left; /* Отменяем действие float */
+   }
