@@ -1,0 +1,336 @@
+body {
+	margin:0;
+	padding:0;
+	font: 14pt Georgia, Georgia, serif; 
+	background: #2a2c29; 
+	color:#c9cac8;
+}
+a {
+	color:#c9cac8;
+}
+	
+#container {
+	width: 100%; 
+	margin: 0; 
+	position:relative;
+}
+	
+.orange {
+	color:#9b4115;
+}
+	
+/* -----HEADER----- */
+    #header {	
+		height:120px;
+		background: url(../img/header_bkgrnd.jpg); 
+		border-bottom: 5px solid #9b4115;
+		position:relative;
+    }
+	#header-content {
+		width:1200px;
+		height:120px;
+		margin:0 auto;
+		padding:0px;
+	}
+	#header-left {
+		font: 45pt Arial; 
+		float:left;
+		height:120px;
+	}
+	#header-right {
+		float:right;
+		height:120px;
+	}
+	#header-languages {
+		float:right;
+		height:30px;
+		margin-top:20px;
+	}
+	#social {
+		float:right;
+		margin: 20px 40px 0px 20px;
+	}
+	#site_title {
+		font-size: 100% 45px;
+		font-weight:bold;
+		float:left;
+		margin-top:55px;
+	}
+/* -----END HEADER----- */
+      
+
+/* ---------- CONTENT ------------- */
+	#content {
+		width:1100px;
+		height:800px;
+		margin:0 auto;
+		padding:10px 20px 10px 80px;
+	}
+	/* ------------- Menu ------------------ */
+		#menu {
+			padding: 18px 10px;
+			width: 1080px;
+			height:24px;
+			background:#151615;
+			margin-bottom:10px;
+		}
+		#menu ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		#menu ul li {
+			display: inline;	
+		}
+
+		#menu ul li a {
+			padding: 0px 0px;
+			margin: 0px 0px 0px 20px;
+			font: 14px;
+			font-weight: bold;
+			color:#9b4115;
+			text-decoration: none;
+		}
+	/* ---------- End of Menu ------------- */
+	/* ---------- Content-Left-Column ------------- */
+		#content-left-column {
+			padding:0px;
+			float:left;
+			width:790px;
+			margin-bottom:20px;
+		}
+		#logo {
+			width:790px;
+			background: url(img/logo.jpg) no-repeat;
+		}
+		#component {
+			width:790px;
+		}
+		.news {
+			width:790px;
+			padding:10px 0px;
+			height:131px;
+			border-bottom: 5px solid #151615;
+		}
+		.news-left {
+			height:131px;
+			width:387px;
+			float:left;
+		}
+		.news-right {
+			float:right;
+			height:131px;
+			width:395px;
+		}
+		.news-right-title {
+			height:23px;
+			width:385px;
+			padding:5px;
+			background: #151615;
+			margin-bottom: 10px;
+		}
+		.news-right-text {
+			font-size:9pt;
+		}
+	/* ---------- End of Content-Left-Column ------------- */
+	/* ---------- Content-Right-Column ------------- */
+		#content-right-column {
+			padding:0px;
+			float:right;
+			width:272px;
+			height:740px;
+			font:12pt;
+		}
+		#calendar-title {
+			padding:5px;
+			height:24px;
+			width:262px;
+			background: #151615;
+			margin-bottom:3px;
+		}
+		#calendar{
+			width:272px;
+			height:200px;
+			background: #151615;
+			margin-bottom:3px;
+		}
+		#registration{
+			height:25px;
+			padding:6px;
+			text-align:center;
+			background: #151615;
+			margin-bottom:15px;
+		}
+		#popular-title {
+			padding:5px;
+			height:24px;
+			background: #151615;
+			margin-bottom:3px;
+		}
+		#popular {
+			padding:10px;
+			height:392px;
+			background: #151615;	
+		}
+		#popular ul {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		#popular ul li {
+			font-size: 10pt;
+			border-bottom: 5px solid #9b4115;
+			margin: 10px 0px;
+		}
+	/* ---------- End of Content-Right-Column ------------- */
+	.navigation a:link,
+	.navigation a:visited,
+	.navigation a:hover,
+	.navigation a:active {
+		text-decoration:none;		
+		padding:3px 6px;
+		font:14px Arial, Helvetica, sans-serif;
+		
+	}
+	/* ---------- Archive ------------- */
+		#archive {
+			width:100%;
+			float:left;
+			border-bottom: 15px solid #9b4115;
+		}
+		#archive-title {
+			border-top: 4px solid #9b4115;
+			background: #151615;
+			padding:10px;
+			height:27px;
+			margin-bottom:15px;
+			font-weight:bold;
+		}
+		#archive-content {
+			font-weight:normal;
+		}
+		#archive-left {
+			width:344px;
+			float:left;	
+	    }
+		#archive-right {
+			width:344px;
+			float:right;
+		}
+		#archive-center {
+			margin: 0px 344px 0px 379px;
+		}
+		.archive-item {
+			width:344px;
+			margin-bottom:20px;
+		}
+		
+		.archive-item-date {
+			font-size:10pt;
+			padding:3px;
+		}
+		.archive-item-title {
+			height:23px;
+			padding:5px;
+			background: #151615;
+			font-size: 12pt;
+			margin-bottom:10px;
+			font-weight:bold;
+		}
+		
+		.archive-item-text {
+			font-size:9pt;
+		}
+		#archive-navigation{
+			text-align:center;
+			margin-bottom:20px;
+		}
+		
+		
+	/* ---------- End Archive ------------- */
+	/* ---------- Links ------------- */	
+		#links {
+			width:100%;
+			float:left;
+			padding: 10px 0px;
+			
+		}
+		#links-wifi {
+			width:489px;
+			height:315px;
+			padding:20px;
+			float:left;
+			background:#151615;
+		}
+		#links-championship {
+			width:560px;	
+			float:right;
+		}
+		
+		#links-championship-left {
+			width:272px;	
+			float:left;
+		}
+		#links-championship-right {
+			width:272px;	
+			float:right;
+		}
+		
+		#links-championship-navigation {
+			text-align:center;
+			margin-bottom:10px;
+		}
+		
+		.championship-item {
+			width:272px;
+			height:111px;
+			margin-bottom:10px;
+		}
+		.championship-item  a{
+			margin: 100px 10px 10 px 0 px;
+			float:right;
+			position:absolute;
+		}
+	/* ---------- End of Links ------------- */
+/* ---------- END OF CONTENT ------------- */
+/* ---------- FOOTER ------------- */
+	#footer {
+		background: #151615; 
+		height:180px;
+		position:relative;
+		clear: both; 
+		
+		border-top: 5px solid #9b4115;
+	}
+	#footer-content {
+		margin:0 auto;
+		width:1200px;
+		height:180px;
+		padding: 15px; 
+	}
+	#footer-left {
+		width:200px;
+		float:left;
+	}
+    #footer-right {
+		width:200px;
+		float:right;
+	}
+    #footer-center {
+		margin: 0px 200px;
+		border-left: 3px solid #c9cac8;
+		border-right: 3px solid #c9cac8
+    }
+/* ---------- END OF FOOTER ------------- */
+/* ---------- COMPANY NAME -------------- */
+	#content-company-name {
+		width:1200px;
+		margin:0 auto;
+    }
+	 #company-name {
+		float:right;
+		color:#9b4115;
+		font-size:10pt;
+		padding: 20px;
+    }
+/* ---------- END OF COMPANY NAME -------------- */

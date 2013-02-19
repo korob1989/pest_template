@@ -19,8 +19,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/pest_template/css/tmplate.css" type="text/css" />
-<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/pest_template/css/my_style.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/pest_template/css/style.css" type="text/css" />
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
@@ -32,196 +31,90 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 </head>
 <body>
 <a name="up" id="up"></a>
-
 <div id="container">
-  
-   <div id="header">
+	<div id="header">
 		<div id="header-content">
-		
 			<div id="header-left">
-				<div id="site_title">P<font class="orange">E</font>ST</div>
+				<div id="site_title">
+					P<span class="orange">E</span>ST
+				</div>
 			</div>
 			<div id="header-right">
 				<div id="header-languages">
-					<a href="#"><img src="templates/pest_template/img/english.jpg"></a>
-					<a href="#"><img src="templates/pest_template/img/russian.jpg"></a>
-				<?php if($this->countModules('topheader')) : ?>
+					<?php if($this->countModules('topheader')) : ?>
 						<jdoc:include type="modules" name="topheader" style="xhtml" />
-				<?php endif; ?>
-				</div>
-				<br>
-				<div id="social">
-					<a href="#"><img src="templates/pest_template/img/facebook.jpg"></a>
-					<a href="#"><img src="templates/pest_template/img/g+.jpg"></a>
-					<a href="#"><img src="templates/pest_template/img/vk.jpg"></a>
-					<a href="#"><img src="templates/pest_template/img/twit.jpg"></a>
-				
-				
-					<?php if($this->countModules('bottomheader')) : ?>
-							
-							<jdoc:include type="modules" name="bottomheader" style="xhtml" />
-							<a href="#"><img src="templates/pest_template/img/facebook.jpg"></a>
-							<a href="#"><img src="templates/pest_template/img/g+.jpg"></a>
-							<a href="#"><img src="templates/pest_template/img/vk.jpg"></a>
-							<a href="#"><img src="templates/pest_template/img/twit.jpg"></a>
-						
 					<?php endif; ?>
 				</div>
-					
-				
+				<br />
+				<div id="social">
+					<?php if($this->countModules('bottomheader')) : ?>
+							<jdoc:include type="modules" name="bottomheader" style="xhtml" />
+					<?php endif; ?>
+				</div>
 			</div>
 		</div>
-   </div>
-   
-   <div id="content">
-		<?php if($this->countModules('topcontent')) : ?>
-				<div id="menu">
+	</div>
+	<div id="content">
+		<div id="menu">
+			<?php if($this->countModules('topcontent')) : ?>
 					<jdoc:include type="modules" name="topcontent" style="xhtml" />
-				</div>
-		<?php endif; ?>
-    
-	
-	
+			<?php endif; ?>
+		</div>
+		<div id="content-left-column">
+			<div id="logo">
 				
-		
-	<div id="content-left-column">
-		<div id="logo">
-			<img src="templates/pest_template/img/logo.jpg">
+			</div>
+			<div id="component">
+				<jdoc:include type="component" />
+			</div>
+			
 		</div>
-		<div id="component">
-			<jdoc:include type="component" />
-		</div>
-		
-		<div class="news">
-			<div class="news-left">
-				<img src="templates/pest_template/img/board.jpg">
-			</div>
-			<div class="news-right">
-				<div class="news-right-title">
-				Финал AMA Supercross
-				</div>
-				<div class="news-right-text">
-				Вот и закончился чемпионат.....
-				</div>
-			</div>
-		</div>
-		<div class="news">
-			<div class="news-left">
-				<img src="templates/pest_template/img/drift.jpg">
-			</div>
-			<div class="news-right">
-				<div class="news-right-title">
-				Финал AMA Supercross
-				</div>
-				<div class="news-right-text">
-				Вот и закончился чемпионат.....
-				</div>
-			</div>
-		</div>
-		<div class="news">
-			<div class="news-left">
-				<img src="templates/pest_template/img/drift.jpg">
-			</div>
-			<div class="news-right">
-				<div class="news-right-title">
-				Финал AMA Supercross
-				</div>
-				<div class="news-right-text">
-				Вот и закончился чемпионат.....
-				</div>
-			</div>
-		</div>
-		
-	</div>
-	
-	
-	<?php if($this->countModules('rightsidebar')) : ?>
 		<div id="content-right-column">
-					
-			<div id="calendar-title">
-				<img src="templates/pest_template/img/orange_square_big.jpg">
-				Календарь событий
-			</div>
-			<div id="calendar">
-				<jdoc:include type="modules" name="rightsidebar" style="xhtml" />	
-			</div>
-			<div id="registration">
-				<font class="orange">Вход | Регистрация</font>
-			</div>
-			<div id="popular-title">
-				<img src="templates/pest_template/img/orange_square_big.jpg">
-				Популярные
-			</div>
-			<div id="popular">
+			<?php if($this->countModules('rightsidebar')) : ?>
 				
-			</div>
-		</div>						
-	<?php endif; ?>
-	
-	
-	
-	
-	
-	
-	
-	<div id="news-archive">
-		<div id="news-archive-title">
-		Архив новостей
+					<jdoc:include type="modules" name="rightsidebar" style="xhtml" />	
+				
+			<?php endif; ?>
 		</div>
-		<?php if($this->countModules('bottompanel1')) : ?>
-				<div id="news-archive-module">	
+		
+		<div id="archive">
+			<?php if($this->countModules('bottompanel1')) : ?>
 					<jdoc:include type="modules" name="bottompanel1" style="xhtml" />
-				</div>
-		<?php endif; ?>
-		<br><br><br><br>
-	</div>
-	<br><br>
-	<div id="links">
-		<div id="links-left">
-			<a href="#"><img src="templates/pest_template/img/wifi.jpg"></a>
+			<?php endif; ?>
+			
 		</div>
-		
-		<?php if($this->countModules('bottompanel2')) : ?>
-				<div id="links-right">
+		<div id="links">
+			<?php if($this->countModules('bottompanel2')) : ?>
 					<jdoc:include type="modules" name="bottompanel2" style="xhtml" />
-				</div>
-		<?php endif; ?>
-	</div>
-	
-	
-		
-   </div>
-
-
-
-   <div id="footer">
+			<?php endif; ?>
+		</div>	
+    </div>
+	<div id="footer">
 		<div id="footer-content">
-			<?php if($this->countModules('lFooter')) : ?>
-				<div id="footer-left">
+			<div id="footer-left">
+				<?php if($this->countModules('lFooter')) : ?>
 					<jdoc:include type="modules" name="lFooter" style="xhtml" />
-				</div>
-			<?php endif; ?>
-			<?php if($this->countModules('rFooter')) : ?>
-				<div id="footer-right">
+				<?php endif; ?>
+		    </div>	
+			<div id="footer-right">
+				<?php if($this->countModules('rFooter')) : ?>
 					<jdoc:include type="modules" name="rFooter" style="xhtml" />
-				</div>
-			<?php endif; ?>
-			<?php if($this->countModules('cFooter')) : ?>
-				<div id="footer-center">
+				<?php endif; ?>
+		    </div>
+			<div id="footer-center">
+				<?php if($this->countModules('cFooter')) : ?>
 					<jdoc:include type="modules" name="cFooter" style="xhtml" />
-				</div>
-			<?php endif; ?>
+			    <?php endif; ?>
+				
+		    </div>
 		</div>
-   </div>
-   
-  </div> 
-
-
-
-
-
-
-
+    </div>
+	<div id="content-company-name">
+		<div id="company-name">
+			Сделано в студии REDSTAR
+		</div>
+	</div>
+</div> 
 
 
 <jdoc:include type="modules" name="debug" />
